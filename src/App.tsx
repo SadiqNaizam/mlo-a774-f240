@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import { ThemeProvider } from "./contexts/ThemeProvider"; // Added
 
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import LoginPage from "./pages/LoginPage";
@@ -15,6 +16,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
 <QueryClientProvider client={queryClient}>
+  <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme"> {/* Added ThemeProvider */}
     <TooltipProvider>
     <Toaster />
     <Sonner />
@@ -32,6 +34,7 @@ const App = () => (
         </Routes>
     </BrowserRouter>
     </TooltipProvider>
+  </ThemeProvider> {/* Closed ThemeProvider */}
 </QueryClientProvider>
 );
 
