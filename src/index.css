@@ -4,42 +4,42 @@
 
 @layer base {
   :root {
-    /* Doraemon Inspired Design System - Light Mode */
-    --background: 210 60% 98%; /* Very Light Blue/Gray (#F0F5FA) */
-    --foreground: 215 25% 27%; /* Dark Blue/Gray (#344154) */
+    /* Doremon Design System - Light Mode */
+    --background: 208 100% 97%; /* AliceBlue-like, e.g., #F0F8FF */
+    --foreground: 220 15% 25%; /* Dark Slate Gray-ish for text, e.g., #3A414C */
 
-    --card: 0 0% 100%; /* White (#FFFFFF) */
-    --card-foreground: 215 25% 27%; /* Dark Blue/Gray (#344154) */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 15% 25%; /* Dark Slate Gray-ish */
 
-    --popover: 0 0% 100%; /* White (#FFFFFF) */
-    --popover-foreground: 215 25% 27%; /* Dark Blue/Gray (#344154) */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 15% 25%; /* Dark Slate Gray-ish */
 
-    --primary: 210 80% 50%; /* Doraemon Blue (#3377CC) */
-    --primary-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --primary: 199 100% 46%; /* Doremon Blue, e.g., #00A0E9 */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 30% 90%; /* Light Blue-Gray (#D9E2F0) */
-    --secondary-foreground: 215 20% 45%; /* Medium Blue-Gray (#5D6B80) */
+    --secondary: 199 80% 75%; /* Lighter Doremon Blue */
+    --secondary-foreground: 199 100% 25%; /* Darker Doremon Blue for text on lighter blue */
 
-    --muted: 210 30% 94%; /* Very Light Blue-Gray (#E6ECF5) */
-    --muted-foreground: 215 25% 55%; /* Medium-Light Blue-Gray (#788599) */
+    --muted: 210 30% 94%; /* Very light gray-blue */
+    --muted-foreground: 210 20% 50%; /* Medium gray-blue */
 
-    --accent: 0 85% 55%; /* Doraemon Red (#E11D48) */
-    --accent-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --accent: 355 100% 45%; /* Doremon Red, e.g., #E60012 */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 85% 55%; /* Doraemon Red (#E11D48) */
-    --destructive-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --destructive: 355 100% 45%; /* Doremon Red, e.g., #E60012 */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --success: 160 70% 42%; /* Existing Green (#10B981) */
-    --success-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --success: 160 70% 42%; /* Existing Green */
+    --success-foreground: 0 0% 100%; /* White (updated for contrast) */
 
-    --warning: 45 100% 50%; /* Doraemon Yellow (Bell) (#FFBF00) */
-    --warning-foreground: 0 0% 10%; /* Dark text for yellow (#1A1A1A) */
+    --warning: 51 100% 50%; /* Doremon Yellow (Bell), e.g., #FFD700 */
+    --warning-foreground: 51 100% 15%; /* Dark brown/black for yellow text contrast */
 
-    --border: 210 25% 85%; /* Light Blue-Gray Border (#CED8E6) */
-    --input: 210 25% 85%; /* Light Blue-Gray Input Border (#CED8E6) */
-    --ring: 210 80% 50%; /* Doraemon Blue for focus ring (#3377CC) */
+    --border: 199 50% 85%; /* Light Blue-Gray, derived from primary */
+    --input: 199 50% 85%; /* Matching input border */
+    --ring: 199 100% 46%; /* Doremon Blue for focus ring */
 
-    --radius: 0.5rem; /* 8px */
+    --radius: 0.75rem; /* 12px - More rounded */
 
     /* Font Variables (Unchanged) */
     --font-sans: "Manrope", "Inter", "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -57,40 +57,40 @@
   }
 
   .dark {
-    /* Doraemon Inspired Design System - Dark Mode */
-    --background: 215 35% 20%; /* Dark Navy Blue (#222B3D) */
-    --foreground: 210 30% 85%; /* Light Gray/Off-white (#C5D0E0) */
+    /* Doremon Design System - Dark Mode */
+    --background: 199 70% 12%; /* Dark Doremon Blue, e.g., #0A2E40 */
+    --foreground: 199 30% 90%; /* Light Gray-Blue for text */
 
-    --card: 215 30% 25%; /* Slightly Lighter Dark Navy (#2C384E) */
-    --card-foreground: 210 30% 85%; /* Light Gray/Off-white (#C5D0E0) */
+    --card: 199 60% 18%; /* Slightly lighter Dark Blue, e.g., #153A50 */
+    --card-foreground: 199 30% 90%; /* Light Gray-Blue */
 
-    --popover: 215 30% 25%; /* Slightly Lighter Dark Navy (#2C384E) */
-    --popover-foreground: 210 30% 85%; /* Light Gray/Off-white (#C5D0E0) */
+    --popover: 199 60% 18%; /* Slightly lighter Dark Blue */
+    --popover-foreground: 199 30% 90%; /* Light Gray-Blue */
 
-    --primary: 210 90% 65%; /* Brighter Doraemon Blue (#66A3E0) */
-    --primary-foreground: 215 30% 15%; /* Dark Blue text for contrast (#1A202C) */
+    --primary: 199 90% 60%; /* Brighter Doremon Blue for dark mode, e.g., #33B5EB */
+    --primary-foreground: 199 100% 10%; /* Very Dark Blue for contrast */
 
-    --secondary: 215 20% 30%; /* Dark Blue-Gray (#3A455A) */
-    --secondary-foreground: 210 25% 75%; /* Light Gray (#AAB5C9) */
+    --secondary: 199 70% 30%; /* Muted Doremon Blue */
+    --secondary-foreground: 199 80% 85%; /* Light text for muted blue */
 
-    --muted: 215 25% 28%; /* Darker Blue-Gray (#344055) */
-    --muted-foreground: 210 25% 65%; /* Medium-Light Gray (#909BAD) */
+    --muted: 199 50% 22%; /* Darker, desaturated blue */
+    --muted-foreground: 199 30% 65%; /* Medium-light gray-blue */
 
-    --accent: 0 90% 65%; /* Brighter Doraemon Red (#F54D6A) */
-    --accent-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --accent: 355 90% 60%; /* Brighter Doremon Red for dark mode, e.g., #F75E6C */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 90% 65%; /* Brighter Doraemon Red (#F54D6A) */
-    --destructive-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --destructive: 355 90% 60%; /* Brighter Doremon Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --success: 160 70% 38%; /* Existing Darker Green (#1A8559) */
-    --success-foreground: 0 0% 100%; /* White (#FFFFFF) */
+    --success: 145 65% 45%; /* Visible Green for dark mode */
+    --success-foreground: 0 0% 100%; /* White */
 
-    --warning: 45 90% 60%; /* Brighter Doraemon Yellow (#FFC933) */
-    --warning-foreground: 0 0% 10%; /* Dark text for yellow (#1A1A1A) */
+    --warning: 51 90% 60%; /* Brighter Doremon Yellow for dark mode, e.g., #FFDE4C */
+    --warning-foreground: 51 100% 15%; /* Dark brown/black for yellow text contrast */
 
-    --border: 215 20% 40%; /* Medium-Dark Blue-Gray Border (#525E73) */
-    --input: 215 20% 40%; /* Medium-Dark Blue-Gray Input Border (#525E73) */
-    --ring: 210 90% 70%; /* Even Brighter Doraemon Blue (#7FBFFF) */
+    --border: 199 50% 30%; /* Medium Dark Blue-Gray */
+    --input: 199 50% 30%; /* Matching input border */
+    --ring: 199 90% 60%; /* Brighter Doremon Blue for focus ring */
 
     /* Sidebar variables aligned with main theme (dark) */
     --sidebar-background: var(--background);
